@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
 
+// Initialize express
 const app = express();
 
 
@@ -19,8 +20,8 @@ app.engine('handlebars', exphbs({defaultLayout: 'main' }))
 app.set('view engine', 'handlebars');
 
 // Add mongoose
-mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost:27017/news-scraper");
+// mongoose.Promise = Promise;
+// mongoose.connect("mongodb://localhost:27017/news-scraper");
 
 // Require routes
 require('./routes/apiRoutes')(app);

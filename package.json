@@ -1,16 +1,17 @@
 {
-  "name": "express",
+  "name": "scraper",
   "version": "1.0.0",
-  "description": "",
+  "description": "blah",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/And-Rasta/Mongo-Scraper.git"
   },
-  "author": "",
+  "author": "drasta",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/And-Rasta/Mongo-Scraper/issues"
@@ -18,8 +19,12 @@
   "homepage": "https://github.com/And-Rasta/Mongo-Scraper#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "base-url": "^1.0.0",
     "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
-    "mongoose": "^5.4.11"
-  }
+    "mongoose": "^5.4.11",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {}
 }
