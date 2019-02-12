@@ -28,9 +28,9 @@ require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log("Application started");
-});
+// app.listen(PORT, () => {
+//     console.log("Application started");
+// });
 
 // Connect to Mongo DB
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
