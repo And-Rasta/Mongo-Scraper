@@ -1,0 +1,8 @@
+<h2 class="title">New Articles</h2>
+{{#each articles}}
+    <div class="alert alert-success article-styles">
+        <h4 class="article-title"><a href="{{url}}" target="_blank">{{ title }}</a></h4>
+        <button class="save-button btn btn-primary" data-title="{{title}}" data-url="{{url}}">Save Article</button>
+        <div class="clearfix"></div>
+    </div>
+{{/each}}
