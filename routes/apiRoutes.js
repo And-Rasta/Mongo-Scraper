@@ -21,7 +21,10 @@ module.exports = (app) => {
                     });
                 }
             });
-            //
+            // Push to DB
+            db.Article.create(articles)
+            .then(stored => console.log(stored))
+            .catch(err => console.log(err.message));
             res.json(articles);
         })
     })
